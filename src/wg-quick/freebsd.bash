@@ -125,7 +125,7 @@ add_if() {
 		return $rc
 	fi
 	echo "[!] Missing WireGuard kernel support ($ret). Falling back to slow userspace implementation." >&3
-	cmd "${WG_QUICK_USERSPACE_IMPLEMENTATION:-wireguard-go}" "$INTERFACE"
+	cmd "${WG_QUICK_USERSPACE_IMPLEMENTATION:-amneziawg-go}" "$INTERFACE"
 }
 
 del_routes() {
